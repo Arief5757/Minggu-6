@@ -1,0 +1,151 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>My Website</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="icon" href="IMG/favicon.ico" type="image/x-icon">
+	<style>
+	* {
+	  box-sizing: border-box;
+	}
+
+	body {
+	  font-family: Arial, Helvetica, sans-serif;
+	}
+
+	/* Style the header */
+	header {
+	  background-color: #5a9cfc;
+	  padding: 30px;
+	  text-align: center;
+	  font-size: 35px;
+	  color: white;
+	}
+
+	/* Create two columns/boxes that floats next to each other */
+	nav {
+	  float: left;
+	  width: 15%;
+	  background: #fff;
+	  padding: 20px;
+	}
+
+	/* Style the list inside the menu */
+	nav ul {
+	  list-style-type: none;
+	  padding: 0;
+      padding-top: 40px;
+	}
+
+    nav ul li {
+        list-style-type:circle;
+        padding: 10px;
+        padding-top: 30px;
+    }
+
+    nav ul li a {
+        list-style-type: none;
+        padding: 0;
+        text-decoration: none;
+    }
+
+	article {
+	  float: left;
+	  padding: 20px;
+	  width: 85%;
+	  background-color: #f1f1f1;
+      height: 100%;
+	}
+
+	/* Clear floats after the columns */
+	section::after {
+	  content: "";
+	  display: table;
+	  clear: both;
+	}
+
+	/* Style the footer */
+	footer {
+	  background-color: #579aff;
+	  padding: 10px;
+	  text-align: center;
+	  color: white;
+	}
+
+	/* Responsive layout - makes the two columns/boxes stack on top of each other instead of next to each other, on small screens */
+	@media (max-width: 600px) {
+	  nav, article {
+		width: 100%;
+		height: auto;
+	  }
+	}
+	</style>
+</head>
+	<body>
+		<header>
+		  <h2>websiteku</h2>
+		</header>
+
+		<section aria-label="article">
+		  <nav>
+			<ul>
+			  <li><a href="My%20Index.html">HOME</a></li>
+			  <li><a href="cv.pdf">Download CV</a></li>
+              <li><a href="Kontak.html">Kontak</a></li>
+			  <li><a href="tentangku.html">Tentangku</a></li>
+			  <li><a href="alamat.html">Alamat</a></li>
+			</ul>
+		  </nav>
+		  
+		  	<article aria-label="article">
+                <div>
+                    <img src="IMG/IMG_0616.JPEG" alt="gambar cat" width="200" height="200" 
+						style="border-radius: 50%;"> 
+                    <p>M. Arief Rizky Aditya</p>
+                    <p>Belajar ngoding Html</p>
+				</div>
+                  <hr>
+                  
+                    <p>Overview</p>
+                    <p>
+                      Hai, Saya Arief, Saya ingin menjadi seorang Programer Hebat maka dari itu
+                      saya ingin terus belajar dan belajar
+                    </p>
+                 
+                  <table>
+                    <thead>
+                      <tr>
+                        <th>Hobi</th>
+                        <th>Skill</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td>
+                          <ul>
+                            <li>Traveling</li>
+                            <li>Bermain Game</li>
+                            <li>Bersepeda</li>
+                          </ul>
+                        </td>
+                        <td>
+                          <ul>
+                            <li>Pemrograman Html</li>
+                            <li>Pemrograman C++</li>
+                            <li>Networking</li>
+                          </ul>
+                        </td>
+                      </tr>
+                    </tbody>
+                  </table>
+		  	</article>
+		</section>
+
+		<footer>
+		  <p>Copyright &copy; 2022 Arief</p>
+		</footer>
+	</body>
+</html>
+
